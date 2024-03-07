@@ -1,0 +1,31 @@
+[
+  {
+    "name": "Eid ul Adha",
+    "title": "Eid al-Adha Blessings Unveiled",
+
+    "date": "July 10, 2024",
+    "img": "https://i.imgur.com/8U1Hf5I.jpg",
+    "textColor": "linear-gradient(90deg, rgba(194, 65, 216, 1) 0%, rgba(100, 25, 159, 1) 88%)",
+    "boxColor": "linear-gradient(90deg, rgba(41,20,99,1) 23%, rgba(201,27,231,1) 100%)",
+    "sideTitle": "#3767f5",
+    "button": "linear-gradient(90deg, rgba(220,78,223,1) 0%, rgba(90,3,237,1) 100%)",
+    "description": "Eid ul Adha, also known as the Festival of Sacrifice, is an important Islamic festival commemorating the willingness of Ibrahim (Abraham) to sacrifice his son as an act of obedience to God.",
+    "traditions": [
+      "Performing the ritual of Qurbani (animal sacrifice).",
+      "Distribution of meat among family, friends, and the less fortunate.",
+      "Special prayers and sermons.",
+      "Acts of charity and kindness."
+    ],
+    "celebrations": [
+      "Eid prayers in mosques and open areas.",
+      "Family gatherings for festive meals.",
+      "Visiting relatives and friends.",
+      "Cultural events and storytelling."
+    ],
+    "intention": "Have the intention in your heart to perform the Eid al-Adha prayer.",
+    "takbirat_al_ihram": "Start the prayer with Takbirat al-Ihram.",
+    "seven_takbirs_first_rak": "After Takbirat al-Ihram, say seven additional takbirs. Then recite Surah Al-Fatiha and another Surah.",
+    "five_takbirs_second_rak": "After standing up for the second rak'ah, say five takbirs before reciting Surah Al-Fatiha and another Surah.",
+    "tashahhud_and_tasleem": "Complete the prayer with the tashahhud and tasleem."
+  }
+]

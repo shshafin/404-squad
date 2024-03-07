@@ -1,0 +1,21 @@
+[
+  {
+    "name": "Eid ul Fitr",
+    "title": "Embracing Blessings of Eid al-Fitr",
+    "date": "April 25, 2024",
+    "img": "https://i.imgur.com/NWwk5q2.jpg",
+    "textColor": "linear-gradient(90deg, rgba(71,114,243,1) 0%, rgba(40,78,201,1) 68%)",
+    "boxColor": "linear-gradient(90deg, rgba(10,27,79,1) 18%, rgba(44,89,216,1) 100%)",
+    "sideTitle": "#3767f5",
+    "button": "linear-gradient(90deg, rgba(97,141,249,1) 0%, rgba(28,90,187,1) 70%)",
+
+    "description": "Eid ul Fitr, also known as the Festival of Breaking the Fast, is celebrated by Muslims worldwide. It marks the end of Ramadan, the holy month of fasting.",
+    "traditions": "Special prayers (Salat al-Eid) in congregation.Charitable donations (Zakat al-Fitr) for the less fortunate.Exchanging gifts and festive meals with family and friends.Wearing new clothes and decorating homes.",
+    "celebrations": "Morning prayers in open areas or mosques.Community gatherings and social events.Sharing meals with neighbors and those in need.Cultural performances and festive decorations.",
+    "intention": "Before starting the prayer, have the intention in your heart that you are performing the Eid prayer.",
+    "takbirat_al_ihram": "Start the prayer by raising your hands and saying 'Allahu Akbar' to enter the prayer state.",
+    "seven_takbirs_first_rak": "After Takbirat al-Ihram, say seven more takbirs. You can raise your hands with each takbir and then recite Surah Al-Fatiha and another Surah.",
+    "five_takbirs_second_rak": "After standing up for the second rak'ah, say five takbirs before reciting Surah Al-Fatiha and another Surah.",
+    "tashahhud_and_tasleem": "Complete the prayer by reciting the tashahhud and giving the salutations (saying As-salamu alaykum)."
+  }
+]
