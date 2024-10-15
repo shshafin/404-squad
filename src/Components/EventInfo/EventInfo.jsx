@@ -15,7 +15,7 @@ const EventInfo = () => {
 
   // Eid al adha
   useEffect(() => {
-    fetch(`/public/data/EidAdha.json`)
+    fetch(`/data/EidAdha.json`)
       .then((res) => res.json())
       .then((data) => setAdha(data));
   }, []);
@@ -23,7 +23,7 @@ const EventInfo = () => {
 
   // Eid al fitr
   useEffect(() => {
-    fetch(`/public/data/EidFitr.json`)
+    fetch(`/data/EidFitr.json`)
       .then((res) => res.json())
       .then((data) => setFitr(data));
   }, []);
