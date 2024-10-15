@@ -11,7 +11,7 @@ const Hadids = () => {
   const [slidesToShow, setSlidesToShow] = useState(4); // Default slides to show
 
   useEffect(() => {
-    fetch(`/public/data/Hadids.json`)
+    fetch(`/data/Hadids.json`)
       .then((res) => res.json())
       .then((data) => setHad(data));
   }, []);

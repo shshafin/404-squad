@@ -17,7 +17,7 @@ const FitrMore = () => {
   const [fitr, setFitr] = useState({});
   // Eid al fitr
   useEffect(() => {
-    fetch(`/public/data/EidFitr.json`)
+    fetch(`/data/EidFitr.json`)
       .then((res) => res.json())
       .then((data) => setFitr(data[0]));
   }, []);
