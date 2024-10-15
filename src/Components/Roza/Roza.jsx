@@ -10,50 +10,54 @@ const Roza = () => {
     <div className="my-32">
       <h1
         data-aos="fade-up"
-        className="text-6xl font-bold text-[#fdd6ff] text-center mb-20  "
+        className="text-4xl md:text-6xl font-bold text-[#fdd6ff] text-center mb-20" // Adjust font size for smaller screens
       >
-        Essence of_Roza
-        <div className="border-8 w-24 my-7 mx-auto custom-border "></div>
+        404 Squad_Journey
+        <div className="border-8 w-24 my-7 mx-auto custom-border"></div>
       </h1>
 
-      <div className="flex justify-center items-center gap-10 max-w-7xl mx-auto ">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-10 max-w-7xl mx-auto">
+        {" "}
+        {/* Change to column on small screens */}
         <img
-          className="w-1/2 h-[500px] rounded-3xl"
-          src="https://i.imgur.com/AOwVNq1.png"
+          className="w-full md:w-1/2 h-[300px] md:h-[500px] rounded-3xl object-cover" // Adjust width and height for small screens
+          src="https://i.imgur.com/7gVBLnn.jpg"
           alt=""
         />
-        <div className="space-y-4 font-bold">
-          <h1 className="text-gray-200">
-            <span className="text-pink-400">What:</span> Roza, also known as
-            Ramadan, refers to the fasting month observed by Muslims around the
-            world. It is the ninth month of the Islamic lunar calendar, during
-            which believers abstain from food, drink, smoking, and certain
-            behaviors from dawn until sunset. Fasting during Ramadan is one of
-            the Five Pillars of Islam and is a time for spiritual reflection,
-            self-discipline, and increased devotion.{" "}
+        <div className="space-y-4 font-bold px-2">
+          <h1 className="text-gray-200 text-base md:text-base">
+            {" "}
+            {/* Adjust font size for small screens */}
+            <span className="text-pink-400">What:</span> 404 Squad is a
+            dedicated team of Sonargaon University students committed to
+            mastering competitive programming and software development. We
+            engage in rigorous practice sessions, problem-solving challenges,
+            and collaborative learning to sharpen our coding skills. Our mission
+            is to transform our passion for programming into practical
+            solutions, paving the way for successful careers in tech. Together,
+            we strive to become proficient developers ready to tackle real-world
+            challenges.
           </h1>
-          <h1 className="text-gray-200">
-            <span className="text-pink-400">Why:</span> Fasting during Roza is
-            an opportunity for Muslims to engage in deep spiritual reflection,
-            self-discipline, and self-improvement. By experiencing hunger,
-            individuals develop empathy for those who are less fortunate and
-            learn the importance of helping those in need. Roza fosters a sense
-            of community and solidarity among Muslims worldwide. Breaking the
-            fast together during Iftar and participating in communal prayers
-            strengthen bonds within the community.{" "}
+          <h1 className="text-gray-200 text-base md:text-base">
+            <span className="text-pink-400">Why:</span> We chose the name
+            &quot;404 Squad&quot; to embody our quest for knowledge and mastery
+            in coding, reflecting the common HTTP error that symbolizes the
+            challenges and obstacles we face along the way. Just as a 404 error
+            indicates a page not found, we are here to find solutions to every
+            problem we encounter in competitive programming and software
+            development. Our squad at Sonargaon University is dedicated to
+            overcoming difficulties and discovering new paths in our coding
+            journey.
           </h1>
-          <h1 className="text-gray-200">
-            <span className="text-pink-400">How:</span> Muslims have a pre-dawn
-            meal called Suhoor before Fajr (dawn) prayer. This meal includes
-            foods that provide sustained energy throughout the day. From dawn
-            until sunset, individuals refrain from consuming food, drinks,
-            smoking, and engaging in negative behaviors. This period of
-            abstinence is a time for spiritual focus and self-control. At
-            sunset, the fast is broken with a meal called Iftar. Traditionally,
-            this begins with eating dates and drinking water, followed by a
-            larger meal that includes a variety of foods. In the evenings,
-            additional prayers called Tarawih are performed at the mosque,
-            emphasizing communal worship during Ramadan.{" "}
+          <h1 className="text-gray-200  text-base md:text-base">
+            <span className="text-pink-400">How:</span> As the 404 Squad, we
+            focus on a collaborative approach to learning. We share resources,
+            tackle problems together, and engage in regular coding sessions to
+            enhance our skills. By practicing competitive programming and
+            transitioning into software development, we aim to build a strong
+            foundation that will support our future careers. Our unity and
+            determination will propel us forward, transforming challenges into
+            triumphs.
           </h1>
         </div>
       </div>

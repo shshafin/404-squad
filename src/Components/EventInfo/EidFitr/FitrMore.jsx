@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import EidFitr from "../../../assets/EidFitr.json";
+import pc from "../../../assets/pc.json";
 import { useEffect, useState } from "react";
 import {
   Timeline,
@@ -23,26 +23,28 @@ const FitrMore = () => {
   }, []);
   console.log(fitr);
   return (
-    <div className="flex justify-center items-center  my-3">
-      <div>
-        <div className="w-3/4  mx-10 my-10 shadow-2xl shadow-purple-900 ">
-          <Lottie animationData={EidFitr}></Lottie>
+    <div className="flex flex-col md:flex-row justify-center items-center my-40">
+      {/* Lottie and Button Section */}
+      <div className="w-full md:w-auto flex flex-col items-center space-y-6">
+        <div className="w-3/4 mx-10 my-10 shadow-2xl shadow-purple-900">
+          <Lottie animationData={pc}></Lottie>
         </div>
-        <div className="ml-52">
+        <div className="ml-0 md:ml-52">
           <Link to={"/"}>
             <Button style={{ background: fitr.button }}>Go Back</Button>
           </Link>
         </div>
       </div>
 
-      <div className="w-[32rem]">
+      {/* Timeline Section */}
+      <div className="w-full md:w-[32rem] mt-10 md:mt-0">
         <Timeline>
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                Traditions
+                Programming Fundamentals
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -51,16 +53,17 @@ const FitrMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.traditions}
+                {fitr.ProgrammingFundamentals}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                Celebrations
+                Front-End Mastery
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -69,16 +72,17 @@ const FitrMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.celebrations}
+                {fitr.FrontEndMastery}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                Intention
+                Back-End Skills
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -87,16 +91,17 @@ const FitrMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.intention}
+                {fitr.BackEndSkills}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                takbirat_al_ihram
+                API Development
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -105,16 +110,17 @@ const FitrMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.takbirat_al_ihram}
+                {fitr.APIDevelopment}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                seven_takbirs_first_rak
+                Version Control With Git
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -123,16 +129,17 @@ const FitrMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.seven_takbirs_first_rak}
+                {fitr.VersionControlWithGit}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                five_takbirs_second_rak
+                Testing And Debugging
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -141,16 +148,17 @@ const FitrMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.five_takbirs_second_rak}
+                {fitr.TestingAndDebugging}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                tashahhud_and_tasleem
+                Deployment & Maintenance
               </Typography>
             </TimelineHeader>
             <TimelineBody>
@@ -159,7 +167,7 @@ const FitrMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.tashahhud_and_tasleem}
+                {fitr.DeploymentMaintenance}
               </Typography>
             </TimelineBody>
           </TimelineItem>

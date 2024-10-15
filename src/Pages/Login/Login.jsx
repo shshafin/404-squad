@@ -10,7 +10,7 @@ import "./LoginButton.css";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import toast from "react-hot-toast";
-import { FaEye, FaEyeSlash, FaFacebook } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 import useAuth from "../../Hook/useAuth";
 
 const Login = () => {
@@ -41,6 +41,8 @@ const Login = () => {
       .then((res) => {
         console.log(res.user);
         toast.success("Successfully Login!");
+
+        // Navigate to the home page after successful login
         navigate(location?.state ? location?.state : "/");
       })
       .catch((error) => {
@@ -54,8 +56,10 @@ const Login = () => {
     GoogleLogin()
       .then((res) => {
         console.log(res.user);
-
         toast.success("Successfully Login!");
+
+        // Navigate to the home page after Google login
+        navigate("/");
       })
       .catch((error) => {
         console.log(error.message);
@@ -71,7 +75,7 @@ const Login = () => {
           shadow={false}
           className="border border-gray-800 px-28 py-5 border-y-[#F9A51A]"
         >
-          <Typography className="" variant="h4" color="gray">
+          <Typography variant="h4" color="gray">
             Login
           </Typography>
           <form
@@ -86,7 +90,7 @@ const Login = () => {
                 size="lg"
                 name="email"
                 placeholder="name@mail.com"
-                className=" !border-t-blue-gray-200 focus:!border-t-gray-900  text-gray-400 "
+                className=" !border-t-blue-gray-200 focus:!border-t-gray-900 text-gray-400"
                 labelProps={{
                   className: "before:content-none after:content-none",
                 }}
@@ -108,7 +112,7 @@ const Login = () => {
                 />
                 {password.length >= 1 && (
                   <span
-                    className="absolute top-4 right-4"
+                    className="absolute top-4 right-4 cursor-pointer"
                     onClick={() => setShow(!show)}
                   >
                     {show ? <FaEyeSlash /> : <FaEye />}
@@ -124,10 +128,10 @@ const Login = () => {
                   color="gray"
                   className="flex items-center font-normal"
                 >
-                  I agree the
+                  I agree to the
                   <a
                     href="#"
-                    className="font-semibold transition-colors hover:text-gray-900 "
+                    className="font-semibold transition-colors hover:text-gray-900"
                   >
                     &nbsp;Terms and Conditions
                   </a>
@@ -137,7 +141,7 @@ const Login = () => {
             />
             <Button
               type="submit"
-              className="mt-6 bg-[#F9A51A] text-black new text-lg px-1 py-1 font-semibold "
+              className="mt-6 bg-[#F9A51A] text-black new text-lg px-1 py-1 font-semibold"
               fullWidth
             >
               Login
@@ -151,16 +155,12 @@ const Login = () => {
           </form>
         </Card>
       </div>
-      <div className="flex text-center justify-center items-center gap-4 ">
+      <div className="flex text-center justify-center items-center gap-4">
         <hr className=" border border-gray-400 w-1/12" />
         <span className="font-semibold text-gray-100">Or</span>
-        <hr className=" border border-gray-400  w-1/12" />
+        <hr className=" border border-gray-400 w-1/12" />
       </div>
       <div className="flex flex-col justify-center items-center gap-4 mt-2">
-        <Button size="lg" className="flex items-center  w-[17rem] fb-bg  -px-4">
-          <FaFacebook className="h-6 w-6 ml-3"></FaFacebook>
-          Continue with Facebook
-        </Button>
         <Button
           onClick={handleGoogle}
           size="lg"
@@ -170,7 +170,7 @@ const Login = () => {
         >
           <img
             src="https://docs.material-tailwind.com/icons/google.svg"
-            alt="metamask"
+            alt="google"
             className="h-6 w-6"
           />
           Continue with Google

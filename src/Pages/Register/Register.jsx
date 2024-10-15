@@ -1,7 +1,7 @@
 import { Card, Input, Button, Typography } from "@material-tailwind/react";
 
 import { Link } from "react-router-dom";
-import { FaEye, FaEyeSlash, FaFacebook } from "react-icons/fa";
+import { FaEye, FaEyeSlash } from "react-icons/fa";
 
 import "./Button.css";
 import { useState } from "react";
@@ -66,7 +66,7 @@ const Register = () => {
 
   return (
     <div>
-      <div className="h-[70vh] flex justify-center items-center -mb-2  ">
+      <div className="h-[70vh] flex justify-center items-center -mb-2 mt-20  ">
         <Card
           color="transparent"
           shadow={false}
@@ -164,10 +164,6 @@ const Register = () => {
         <hr className=" border border-gray-400  w-1/12" />
       </div>
       <div className="flex flex-col justify-center items-center gap-4 mt-2">
-        <Button size="lg" className="flex items-center  w-[17rem] fb-bg  -px-4">
-          <FaFacebook className="h-6 w-6 ml-3"></FaFacebook>
-          Continue with Facebook
-        </Button>
         <Button
           onClick={handleGoogle}
           size="lg"

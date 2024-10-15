@@ -13,45 +13,57 @@ import {
 export const AuthContext = createContext(null);
 
 const AuthProvider = ({ children }) => {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState(() => {
+    // Check local storage for user info on initial load
+    const storedUser = localStorage.getItem("user");
+    return storedUser ? JSON.parse(storedUser) : null;
+  });
   const [loading, setLoading] = useState(true);
 
-  //   Google provider
+  // Google provider
   const provider = new GoogleAuthProvider();
+
   // Google sign in
   const GoogleLogin = () => {
     setLoading(true);
     return signInWithPopup(auth, provider);
   };
 
-  //   Register
+  // Register
   const Register = (email, password) => {
     setLoading(true);
     return createUserWithEmailAndPassword(auth, email, password);
   };
+
   const Update = (displayName, photoURL) => {
     setLoading(true);
     return updateProfile(auth.currentUser, { displayName, photoURL });
   };
 
-  // user save
+  // User save
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
       setUser(currentUser);
       setLoading(false);
+      // Save user info to local storage
+      if (currentUser) {
+        localStorage.setItem("user", JSON.stringify(currentUser));
+      } else {
+        localStorage.removeItem("user");
+      }
     });
     return () => {
       unsubscribe();
     };
   }, []);
 
-  //   Login with email
+  // Login with email
   const Login = (email, password) => {
     setLoading(true);
     return signInWithEmailAndPassword(auth, email, password);
   };
 
-  // sign out
+  // Sign out
   const Logout = () => {
     setLoading(true);
     return signOut(auth);
@@ -59,9 +71,9 @@ const AuthProvider = ({ children }) => {
 
   const authInfo = { Register, Update, Login, GoogleLogin, user, Logout };
   return (
-    <div>
-      <AuthContext.Provider value={authInfo}>{children}</AuthContext.Provider>
-    </div>
+    <AuthContext.Provider value={authInfo}>
+      {loading ? <div>Loading...</div> : children}
+    </AuthContext.Provider>
   );
 };
 

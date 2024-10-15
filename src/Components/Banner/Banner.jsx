@@ -9,55 +9,50 @@ import {
   Typography,
 } from "@material-tailwind/react";
 import Lottie from "lottie-react";
-import Mubarak from "../../assets/Mubarak.json";
+import menError from "../../assets/menError.json";
 
 const Banner = () => {
   const [open, setOpen] = useState(false);
 
   const handleOpen = () => setOpen(!open);
   return (
-    <div className="banner-body ">
-      {/* <div className="flex">
-        <img
-          className="w-96 h-[800px]"
-          src="https://i.imgur.com/Uox35fp.png"
-          alt=""
-        /> */}
-
+    <div className="banner-body">
       <div className="flex flex-col justify-center items-center max-w-7xl mx-auto pt-7 h-[70vh]">
-        <div className="space-y-10">
+        <div className="space-y-10 -mb-8 md:-mb-0 text-center px-4 sm:px-6 lg:px-8">
           <div className="relative flex items-center justify-center">
-            <h1 className="gradient-text text-7xl font-extrabold text-center">
-              Festive_Radiance Unveiled
+            <h1 className="gradient-text xl:mt-10 2xl:mt-40 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-extrabold text-center pb-2 leading-tight">
+              Build Your Foundation As A{" "}
+              <span className="semi-gradient">Programmer</span>
             </h1>
             <img
-              className="w-2/3 absolute"
+              className="w-full md:w-2/3 absolute top-0"
               src="https://i.imgur.com/GiRUiVy.png"
               alt=""
             />
           </div>
-          <p className="text-white text-xl text-center ">
-            Embark on a luminous journey of joy, heritage, and community. Our
-            Islamic festival website invites you to explore vibrant traditions,
-            connect with a warm community, and embrace the blessings of each
-            celebration. Join us in commemorating faith, unity, and shared
-            festivities. Illuminate your path with moments of joy, knowledge,
-            and togetherness in every festive experience.
+          <p className="text-white text-lg sm:text-xl md:text-2xl max-w-4xl mx-auto">
+            Learn and Master Basic Programming, Data Structures, Algorithm, OOP,
+            Database, and solve 500+ coding problems to become an exceptionally
+            well-rounded, world-class Programmer.
           </p>
         </div>
 
         <button
           onClick={handleOpen}
-          className="relative my-14 hover:contrast-200  "
+          className="relative my-14 hover:contrast-200"
         >
-          <img src="/src/assets/button.svg" alt="" />
-          <span className="absolute top-3 left-1/3 text-white text-xl font-bold  ">
-            Explore
+          <img
+            src="/src/assets/button.svg"
+            alt=""
+            className="w-36 md:w-full h-auto mx-auto"
+          />
+          <span className="absolute top-1 left-1/2 transform -translate-x-1/2 text-white text-sm md:text-xl font-bold sm:top-2 md:top-3 sm:text-lg whitespace-nowrap">
+            Surprise Awaits!
           </span>
         </button>
 
         <Dialog
-          className="bg-[linear-gradient(90deg, rgba(40,7,66,1) 0%, rgba(13,5,24,1) 15%, rgba(22,6,38,1) 85%, rgba(40,7,66,1) 100%);]"
+          className="bg-[linear-gradient(90deg, rgba(40,7,66,1) 0%, rgba(13,5,24,1) 15%, rgba(22,6,38,1) 85%, rgba(40,7,66,1) 100%)]"
           open={open}
           handler={handleOpen}
         >
@@ -70,43 +65,37 @@ const Banner = () => {
             </Typography>
           </DialogHeader>
           <DialogBody divider className="grid place-items-center gap-4">
-            <Lottie animationData={Mubarak}></Lottie>
-            <Typography color="pink" variant="h4">
-              Welcome to a Celebration of Joy and Togetherness!
+            <Lottie
+              animationData={menError}
+              className="w-1/2 max-w-xs sm:max-w-md"
+            />
+            <Typography color="pink" variant="h4" className="text-center">
+              Welcome to the Error Zone: Where Bugs Meet Their Maker!
             </Typography>
             <Typography color="gray" className="text-center font-normal">
-              " Embrace the spirit of Eid with open hearts and warm smiles. May
-              this festive occasion bring you moments of happiness, blessings,
-              and the company of loved ones. Eid Mubarak – a time for
-              reflection, gratitude, and the joy of sharing. Join us in
-              commemorating the essence of Eid, where traditions meet
-              celebration, and unity resonates in every heartfelt greeting. Let
-              the radiance of this special day illuminate your path with peace
-              and prosperity. Eid Mubarak to you and your family!"
+              &ldquo;Welcome to the wild world of 404 Squad, where we embrace
+              chaos and laugh in the face of errors. Armed with caffeine and
+              determination, we tackle every bug like warriors on a mission.
+              Join us as we break barriers and rewrite the rules of
+              programming!&rdquo;
             </Typography>
           </DialogBody>
           <DialogFooter className="space-x-2">
             <Button variant="gradient" onClick={handleOpen}>
-              JazakAllah
+              Build Together
             </Button>
           </DialogFooter>
         </Dialog>
       </div>
 
-      {/* <img
-          className="w-96 h-[800px]"
-          src="https://i.imgur.com/iV3ks8g.png"
-          alt=""
-        />
-      </div> */}
       <img
-        className="w-full h-full -mb-16 -mt-40"
+        className="w-full h-auto md:-mb-16 -mt-40"
         src="https://i.imgur.com/fBFhO0A.png"
         alt=""
       />
       <div className="shadow-2xl shadow-purple-900">
         <img
-          className="w-full h-full "
+          className="w-full h-auto"
           src="https://i.imgur.com/R7uwHj2.png"
           alt=""
         />

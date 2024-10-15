@@ -1,5 +1,5 @@
 import Lottie from "lottie-react";
-import EidAdha from "../../../assets/EidAdha.json";
+import team from "../../../assets/team.json";
 import { useEffect, useState } from "react";
 import {
   Timeline,
@@ -20,28 +20,31 @@ const AdhaMore = () => {
       .then((res) => res.json())
       .then((data) => setFitr(data[0]));
   }, []);
-  console.log(fitr);
+
   return (
-    <div className="flex justify-center items-center  my-7">
-      <div>
-        <div className="w-3/4  mx-10 my-10  ">
-          <Lottie animationData={EidAdha}></Lottie>
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center mb-96 mt-20 md:my-40 max-h-screen">
+      {/* Lottie and Button Section */}
+      <div className="flex flex-col items-center space-y-6 md:space-y-10">
+        <div className="w-3/4 md:w-1/2 lg:w-1/3">
+          <Lottie animationData={team}></Lottie>
         </div>
-        <div className="ml-52">
+        <div>
           <Link to={"/"}>
             <Button style={{ background: fitr.button }}>Go Back</Button>
           </Link>
         </div>
       </div>
 
-      <div className="w-[32rem]">
+      {/* Timeline Section */}
+      <div className="w-full px-6 md:px-0">
         <Timeline>
+          {/* Timeline Item 1 */}
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                Traditions
+                Data Structures Mastery
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -50,16 +53,18 @@ const AdhaMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.traditions}
+                {fitr.DataStructuresMastery}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
+          {/* Timeline Item 2 */}
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                Celebrations
+                Algorithm Optimization
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -68,16 +73,18 @@ const AdhaMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.celebrations}
+                {fitr.AlgorithmOptimization}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
+          {/* Timeline Item 3 */}
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                Intention
+                Problem Solving Under Pressure
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -86,16 +93,18 @@ const AdhaMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.intention}
+                {fitr.ProblemSolvingUnderPressure}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
+          {/* Timeline Item 4 */}
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                takbirat_al_ihram
+                Mathematics For Coders
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -104,16 +113,18 @@ const AdhaMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.takbirat_al_ihram}
+                {fitr.MathematicsForCoders}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
+          {/* Timeline Item 5 */}
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                seven_takbirs_first_rak
+                Efficient Coding Practices
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -122,16 +133,18 @@ const AdhaMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.seven_takbirs_first_rak}
+                {fitr.EfficientCodingPractices}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
+          {/* Timeline Item 6 */}
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                five_takbirs_second_rak
+                Debugging Like A Pro
               </Typography>
             </TimelineHeader>
             <TimelineBody className="pb-8">
@@ -140,16 +153,18 @@ const AdhaMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.five_takbirs_second_rak}
+                {fitr.DebuggingLikeAPro}
               </Typography>
             </TimelineBody>
           </TimelineItem>
+
+          {/* Timeline Item 7 */}
           <TimelineItem>
             <TimelineConnector />
             <TimelineHeader className="h-3">
               <TimelineIcon />
               <Typography variant="h5" color="white" className="leading-none">
-                tashahhud_and_tasleem
+                Competition Readiness
               </Typography>
             </TimelineHeader>
             <TimelineBody>
@@ -158,7 +173,7 @@ const AdhaMore = () => {
                 color="white"
                 className="font-normal text-gray-600"
               >
-                {fitr.tashahhud_and_tasleem}
+                {fitr.CompetitionReadiness}
               </Typography>
             </TimelineBody>
           </TimelineItem>

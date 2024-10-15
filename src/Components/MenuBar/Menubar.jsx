@@ -49,7 +49,7 @@ const Menubar = () => {
             : ""
         }
       >
-        Art and Calligraphy
+        Mastery Map
       </NavLink>
       <NavLink
         to="/Cal"
@@ -61,26 +61,27 @@ const Menubar = () => {
             : ""
         }
       >
-        Fasting Schedule
+        Our Squad
       </NavLink>
     </ul>
   );
 
   return (
     <div className="banner-body">
-      <div className="   ">
-        <Navbar className="sticky  top-0 z-10 h-max w-full bg-[#0e0619] border-none shadow-none   max-w-full rounded-none px-4 py-2 lg:px-20 lg:py-4">
-          <div className="flex items-center justify-between text-[#feefff]">
+      <div className="">
+        <Navbar className="fixed  top-0 z-10 h-max w-full bg-[#0e0619] border-none shadow-none   max-w-full rounded-none px-4 py-2 lg:px-20 lg:py-4">
+          <div className="flex items-center justify-between text-white">
             <Typography
               as="a"
               className="mr-4 cursor-pointer py-1.5 font-medium flex justify-center items-center gap-2"
+              href="/"
             >
               <img
-                className="w-14"
-                src="https://i.imgur.com/DhqTFQw.png"
+                className="w-12"
+                src="https://i.imgur.com/CK5xU42.png"
                 alt=""
               />
-              <h1 className="text-xl font-bold ">Islamic Fest Vista</h1>
+              <h1 className="text-xl font-bold ">404 Squad</h1>
             </Typography>
             <div className="flex items-center gap-4">
               <div className="mr-4 hidden lg:block">{navList}</div>
@@ -164,11 +165,15 @@ const Menubar = () => {
           <MobileNav open={openNav}>
             {navList}
             <div className="flex items-center gap-x-1">
-              <Button fullWidth variant="text" size="sm" className="">
-                <span>Log In</span>
+              <Button fullWidth variant="text" size="sm" className="text-white">
+                <a href="/login">
+                  <span>Sign In</span>
+                </a>
               </Button>
               <Button fullWidth variant="gradient" size="sm" className="">
-                <span>Sign in</span>
+                <a href="/Register">
+                  <span>Sign In</span>
+                </a>
               </Button>
             </div>
           </MobileNav>

@@ -17,16 +17,16 @@ const Hadid = ({ had }) => {
     <div>
       <div
         style={{ background: box }}
-        className="  max-w-md  p-5 mx-4 rounded-xl "
+        className="max-w-md  p-5 md:mr-3 mx-auto rounded-xl" // Use w-full to make it take full width of its container
       >
-        <article className="flex  flex-col items-start justify-between ">
-          <div className="flex items-center  mb-3 gap-x-32 text-xs">
+        <article className="flex flex-col items-start justify-between">
+          <div className="flex items-center mb-3 gap-x-32 text-xs">
             <time dateTime="2020-03-16" className="text-white text-lg">
               Mar 03, 2024
             </time>
             <a
               style={{ background: bg }}
-              className="relative z-10 rounded-lg  px-3 py-1.5 font-bold text-white "
+              className="relative z-10 rounded-lg px-3 py-1.5 font-bold text-white"
             >
               {btn_name}
             </a>
@@ -42,14 +42,13 @@ const Hadid = ({ had }) => {
               {description}
             </p>
           </div>
-          <div className="flex items-center gap-28 ">
+          <div className="flex items-center gap-28">
             <div className="relative mt-8 flex items-center gap-x-4">
               <img
                 src={image}
                 alt=""
                 className="h-10 w-10 rounded-full bg-gray-50"
               />
-
               <div className="text-sm leading-6">
                 <div>
                   <p className="font-semibold text-gray-400">
@@ -74,13 +73,12 @@ const Hadid = ({ had }) => {
               handler={handleOpen}
             >
               <DialogHeader>
-                <div className="relative mt-8 flex items-center gap-x-4 ">
+                <div className="relative mt-8 flex items-center gap-x-4">
                   <img
                     src={image}
                     alt=""
                     className="h-10 w-10 rounded-full bg-gray-50"
                   />
-
                   <div className="text-sm leading-6">
                     <div>
                       <p className="font-semibold text-gray-400">
@@ -95,7 +93,7 @@ const Hadid = ({ had }) => {
               </DialogHeader>
               <DialogBody className="grid place-items-center gap-4 relative">
                 <Typography
-                  className=" font-bold text-justify text-gray-200 "
+                  className="font-bold text-justify text-gray-200"
                   style={{ zIndex: 2 }}
                 >
                   {description}

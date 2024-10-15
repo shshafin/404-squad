@@ -30,25 +30,25 @@ const EventInfo = () => {
   console.log(fitr);
 
   return (
-    <div className="max-w-7xl mx-auto my-14 ">
+    <div className="max-w-7xl mx-auto my-14 px-4 sm:px-6 lg:px-8">
       <div>
-        <div className="relative mt-32">
+        <div className="relative mt-14 md:mt-32">
           <h1
             data-aos="fade-up"
-            className="text-6xl font-bold text-[#fdd6ff] text-center  "
+            className="text-3xl sm:text-5xl md:text-6xl font-bold text-[#fdd6ff] text-center"
           >
-            Eid Festival_
-            <div className="border-8 w-24 my-7 mx-auto custom-border "></div>
+            Knowledge Journey_
+            <div className="border-4 sm:border-8 w-20 sm:w-24 my-4 mx-auto custom-border"></div>
           </h1>
           <img
             data-aos="fade-right"
-            className="w-48 absolute -bottom-1/2 -right-16"
+            className="w-20 md:w-48 absolute -bottom-1/2 -right-9 md:-right-16"
             src="/src/assets/triangle.svg"
             alt=""
           />
         </div>
 
-        <div className="space-y-28 my-28">
+        <div className="space-y-20 sm:space-y-28 my-20 sm:my-28">
           {/* Eid al Adha */}
           <div data-aos="fade-up">
             {adha.map((data) => (
@@ -62,7 +62,7 @@ const EventInfo = () => {
             ))}
             <img
               data-aos="fade-right"
-              className="w-48 absolute bottom-0 -left-1/4"
+              className="w-24 sm:w-48 absolute md:bottom-0 -bottom-24 md:-left-1/4   "
               src="/src/assets/box.svg"
               alt=""
             />
