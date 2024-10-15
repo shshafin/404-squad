@@ -42,7 +42,7 @@ const Banner = () => {
           className="relative my-14 hover:contrast-200"
         >
           <img
-            src="/src/assets/button.svg"
+            src="/assets/button.svg" // updated path
             alt=""
             className="w-36 md:w-full h-auto mx-auto"
           />
