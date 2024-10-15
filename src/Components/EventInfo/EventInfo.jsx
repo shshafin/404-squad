@@ -43,7 +43,7 @@ const EventInfo = () => {
           <img
             data-aos="fade-right"
             className="w-20 md:w-48 absolute -bottom-1/2 -right-9 md:-right-16"
-            src="/src/assets/triangle.svg"
+            src="/assets/triangle.svg"
             alt=""
           />
         </div>
@@ -63,7 +63,7 @@ const EventInfo = () => {
             <img
               data-aos="fade-right"
               className="w-24 sm:w-48 absolute md:bottom-0 -bottom-24 md:-left-1/4   "
-              src="/src/assets/box.svg"
+              src="/assets/box.svg"
               alt=""
             />
           </div>
